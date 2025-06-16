@@ -11,7 +11,7 @@ build:
     image_template: prometheus-2.17
 
 deploy:
-    context: athulecloud-=1207/DEV
+    context: athulecloud-1207/DEV
     type: statefulset
     replicas: 1
     port:
@@ -26,4 +26,4 @@ volumes:
     
   
 properties:
-    revision : 3
+    revision : 0
