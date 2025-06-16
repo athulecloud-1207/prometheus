@@ -1,7 +1,7 @@
 app:
     name: prometheus
     code: prometheus
-    notify: spramod@ecloudcontrol.com
+    notify: asunil@ecloudcontrol.com
 
 build:
     version: 2.17
@@ -11,11 +11,11 @@ build:
     image_template: prometheus-2.17
 
 deploy:
-    context: sanjaypramodp/DEV
+    context: athulecloud-1207/DEV
     type: statefulset
     replicas: 1
     resources: none
-    ingress: nodeport
+    ingress: none
     port:
     - 9090
 
