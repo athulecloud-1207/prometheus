@@ -11,11 +11,9 @@ build:
     image_template: prometheus-2.17
 
 deploy:
-    context: athulecloud-1207/DEV
+    context: athulecloud-=1207/DEV
     type: statefulset
     replicas: 1
-    resources: none
-    ingress: none
     port:
     - 9090
 
@@ -23,8 +21,9 @@ volumes:
   - claim: prometheus-data
     mount: /appz/data
     name: data
-    size: 10Gi
+    size: 50Gi
     matchLabels: false
-
+    
+  
 properties:
-    revision : 1
+    revision : 3
