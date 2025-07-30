@@ -4,11 +4,11 @@ app:
     notify: asunil@ecloudcontrol.com
 
 build:
-    version: 3.4.1
+    version: 3.4
     env: DEV
     build_file: none
     output_files: output/*.zip
-    image_template: prometheus-2.45
+    image_template: prometheus-3.4
 
 deploy:
     context: athulecloud-1207/DEV
