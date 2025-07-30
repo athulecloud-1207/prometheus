@@ -4,7 +4,7 @@ app:
     notify: asunil@ecloudcontrol.com
 
 build:
-    version: 3.4
+    version: 3.4.1
     env: DEV
     build_file: none
     output_files: output/*.zip
@@ -26,5 +26,5 @@ volumes:
     
   
 properties:
-    revision : 01
+    revision : 02
     
